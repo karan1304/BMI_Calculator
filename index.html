@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>BMI - Calculator</title>
+</head>
+<body>
+        <div class="container" id="container">
+            <div class="display-container" id="display-container"> 
+                <img src="images/male/underweight.jpg" alt="" id="bmi-image"/>
+                <div class="show-data" id="show-data">
+
+                    <div class="res-data res" id="age">
+                        <label>Age</label>
+                        <strong id="res-age">23 </strong>
+                    </div>
+                    <div class="res-data res" id="height">
+                        <label>Height</label>
+                        <strong id="res-height">5.5 ft</strong>
+                    </div>
+                    <div class="res-data res" id="weight">
+                        <label>Weight</label>
+                        <strong id="res-weight">50 kg</strong>
+                    </div>
+                    <div class="res-data res" id="gender">
+                        <label>Gender</label>
+                        <strong id="res-gender">Male</strong>
+                    </div>
+                    <div class="res-data res" id="gender">
+                        <label>BMI</label>
+                        <strong id="res-bmi">Normal</strong>
+                    </div>
+
+                </div>
+            </div>
+            <div class="data-container" id="data-container">
+                <div class="input" id="age">
+                    <label>Age : </label>
+                    <input type="number" id="in-age" />
+                </div>
+                <div class="input" id="height">
+                    <label>Height : </label>
+                    <input type="number" id="in-height" />
+                </div>
+                <div class="input" id="weight">
+                    <label>Weight : </label>
+                    <input type="number" id="in-weight" />
+                </div>
+                <div class="gender input" id="gender">
+                    <a href="#" name="gender" value="Male" class="sex" >Male</a>
+                    <a href="#" name="gender" value="Female" class="sex" >Female</a>
+                </div>
+                <button onclick="calculateBmi()">BMI Calculator</button>
+            </div>
+        </div>   
+<script src="javascript/script.js"></script>
+</body>
+</html>
